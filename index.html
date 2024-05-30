@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rafael Daniel Chantres Garcia's Profile</title>
+  <meta name="description" content="This is the profile of Rafael">
+  <meta charset="utf-8">
+  <script src="https://kit.fontawesome.com/9ea6977ab3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("user_1234567890abcdef"); // EmailJS user ID
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <button id="dark-mode-toggle" class="btn-toggle">Toggle Dark Mode</button>
+  <div class="container">
+    <div class="card-white" id="introduction" data-aos="fade-up">
+      <h1>Welcome to Rafael Chantres's Personal Website</h1>
+      <img src="images/profile_picture.jpeg" class="img-circle" width="400px" alt="Rafael Daniel Chantres Garcia">
+      <p>
+        I am Rafael Chantres. I am in my last semester of the ESSEC Global BBA and this summer I will be joining McGill's Master in Management in Analytics.
+      </p>
+      <a href="https://www.essec.edu/en/program/global-bba-international/#overview" class="btn-essec" target="_blank">ESSEC - Global BBA</a>
+      <a href="https://www.mcgill.ca/desautels/programs/mma" class="btn-mcgill" target="_blank">McGill Desautels - MM Analytics</a>
+    </div>
+    <div class="card-white" data-aos="fade-up">
+      <h2>My Bachelor's Dissertation</h2>
+      <p>
+        I am proud to present my bachelor's dissertation, titled "The Impact of Cultural Indulgence on Overconfidence and Return Expectations: A Comparative Analysis of Retail Investors in France and Mexico." This work delves into the fields of behavioral finance and cultural finance.
+      </p>
+      <a href="ChantresGarcia_RafaelDaniel_B00781928.pdf" class="btn-blue" target="_blank">Read the Dissertation</a>
+    </div>
+    <div class="card-white" data-aos="fade-up">
+  <h2>Sports</h2>
+  <p>
+    I am a sports fanatic. I did triathlon at a high level for four years and currently do boxing and running. Also, due to my triathlon background, I deeply enjoy cycling and swimming. Nonetheless, I really like other sports such as soccer, table tennis, rock climbing, and go-kart racing.
+  </p>
+  <div class="sports-gallery">
+    <div class="sports-item">
+      <img src="images/running.jpeg" alt="Running" class="sports-img">
+      <div class="overlay">
+        <div class="text">Running</div>
+      </div>
+    </div>
+    <div class="sports-item">
+      <img src="images/boxing.jpeg" alt="Boxing" class="sports-img">
+        <div class="overlay">
+          <div class="text">Boxing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="card-white" data-aos="fade-up">
+      <h2>Travelling</h2>
+      <p>
+        I have been travelling since I have use memory. So far, I have visited 34 countries on 4 continents. Hopefully, this list will keep on increasing in the future!
+      </p>
+      <div class="carousel">
+        <div class="carousel-images">
+          <a href="images/bariloche.jpeg" data-lightbox="travel" data-title="Bariloche"><img src="images/bariloche.jpeg" alt="bariloche"></a>
+          <a href="images/vancouver.jpeg" data-lightbox="travel" data-title="Vancouver"><img src="images/vancouver.jpeg" alt="vancouver"></a>
+          <a href="images/veracruz.jpeg" data-lightbox="travel" data-title="Veracruz"><img src="images/veracruz.jpeg" alt="veracruz"></a>
+          <a href="images/iguazu.jpeg" data-lightbox="travel" data-title="Iguazu"><img src="images/iguazu.jpeg" alt="iguazu"></a>
+          <a href="images/estocolmo.jpeg" data-lightbox="travel" data-title="Stockholm"><img src="images/estocolmo.jpeg" alt="stockholm"></a>
+          <a href="images/cementerio.jpeg" data-lightbox="travel" data-title="Cemetery"><img src="images/cementerio.jpeg" alt="cemetery"></a>
+          <a href="images/puente.jpeg" data-lightbox="travel" data-title="Bridge"><img src="images/puente.jpeg" alt="bridge"></a>
+          <a href="images/mountain.jpeg" data-lightbox="travel" data-title="Mountain"><img src="images/mountain.jpeg" alt="mountain"></a>
+        </div>
+        <button class="carousel-button prev">‹</button>
+        <button class="carousel-button next">›</button>
+      </div>
+    </div>
+    <div class="card-white" data-aos="fade-up">
+      <h2>Visited Countries</h2>
+      <div id="map" style="height: 500px;"></div>
+    </div>
+    <div class="card-white" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-blue">Send</button>
+      </form>
+    </div>
+    <div class="card-white" data-aos="fade-up">
+      <h2>Follow me on my social media!</h2>
+      <ul class="list-inline">
+        <li>
+          <a href="https://www.linkedin.com/in/rafachan3/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/rafachan3/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100009100320669" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/rafachan3" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <button id="back-to-top" title="Back to top">&#8679;</button>
+  <script>
+    // Carousel functionality
+    const images = document.querySelectorAll('.carousel-images img');
+    let currentImageIndex = 0;
+
+    function updateCarousel() {
+      images.forEach((img, index) => {
+        img.classList.remove('visible');
+        if (index === currentImageIndex) {
+          img.classList.add('visible');
+        }
+      });
+    }
+
+    document.querySelector('.carousel-button.next').addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      updateCarousel();
+    });
+
+    document.querySelector('.carousel-button.prev').addEventListener('click', () => {
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      updateCarousel();
+    });
+
+    // Initial display
+    updateCarousel();
+
+    // Automatic carousel functionality
+  setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    updateCarousel();
+  }, 5000); // Change image every 5 seconds
+
+    // EmailJS functionality
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_gmail', 'template_xyz', this)
+        .then(function() {
+          alert('Email sent successfully!');
+        }, function(error) {
+          alert('Failed to send email. Please try again later.');
+        });
+    });
+
+    // Leaflet.js map initialization
+    const map = L.map('map').setView([20, 0], 2);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const countries = [
+    "Mexico", "Canada", "US", "Colombia", "Peru", "Brazil", "Chile", "Argentina", "Uruguay",
+    "Bahamas", "Portugal", "Spain", "Ireland", "United Kingdom", "France", "Germany",
+    "Netherlands", "Luxembourg", "Italy", "Austria", "Denmark", "Russia", "Estonia", 
+    "Sweden", "Finland", "Norway", "Belgium", "Turkey", "China", "Singapore", 
+    "Cambodia", "Indonesia", "Egypt", "Greece"
+  ];
+
+    const geocodeCountries = async (country) => {
+      const response = await fetch(`https://nominatim.openstreetmap.org/search?country=${country}&format=json&limit=1`);
+      const data = await response.json();
+      return data.length > 0 ? [data[0].lat, data[0].lon] : null;
+    };
+
+    (async () => {
+      for (const country of countries) {
+        const coords = await geocodeCountries(country);
+        if (coords) {
+          L.marker(coords).addTo(map).bindPopup(country);
+        }
+      }
+    })();
+
+    // AOS initialization
+    AOS.init();
+
+    // Dark Mode Toggle
+    const toggleDarkMode = () => {
+      document.body.classList.toggle('dark-mode');
+    };
+
+    document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
+
+    // Back to Top Button functionality
+     let mybutton = document.getElementById("back-to-top");
+
+  window.onscroll = function() {scrollFunction(); updateProgressBar();};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  mybutton.addEventListener("click", function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Enables smooth scrolling
+    });
+  });
+
+    // Progress Bar functionality
+    function updateProgressBar() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      console.log('winScroll:', winScroll);
+      console.log('height:', height);
+      console.log('scrolled:', scrolled);
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    }
+
+    // Ensure Lightbox is correctly initialized
+    document.addEventListener("DOMContentLoaded", function() {
+      if (typeof lightbox !== 'undefined') {
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true
+        });
+      } else {
+        console.error("Lightbox is not defined");
+      }
+    });
+  </script>
+</body>
+
+</html>
